@@ -27,3 +27,4 @@ jobs:
         run: python -m build
       - name: Test
         run: tox --installpkg dist/*.whl
+        shell: bash  # avoid glob expansion errors on windows
