@@ -1,6 +1,5 @@
 import pytest
-import A
-import B
+from myproj import A, B
 
 def test_squared_sum():
     assert A.squared_sum(2, 3) == 25
